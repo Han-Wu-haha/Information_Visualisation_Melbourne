@@ -1,0 +1,42 @@
+Title: Discover Melbourne
+
+Overview:
+---------
+This project aims to provide tourists with an interactive and engaging interface to explore Melbourne's landmarks, recreational routes, restaurants, and accommodations. It is implemented using R's Shiny package, combined with Leaflet and Tableau integration, to deliver a rich, visual experience.
+
+The application provides four main sections:
+1. Routes & Landmarks: Visualize and explore bicycle routes, walking paths, and city landmarks.
+2. Melbourne Weather Overview: Explore precipitation and temperature patterns over the years.
+3. Where to Eat in Melbourne: Discover restaurants based on seating type, industry, and suburb.
+4. Where to Stay in Melbourne: Explore Airbnb listings, filter by price and room type.
+
+Files:
+------
+1. `R_code.R`: Main script that contains the UI and server logic for running the Shiny application.
+2. Data Files:
+   - `IDCJAC0001_086338_Data1.csv`: Precipitation data for Melbourne.
+   - `IDCJAC0002_086338_Data1.csv`: Temperature data for Melbourne.
+   - `IDCJAC0003_086338_Data1.csv`: Solar exposure data for Melbourne.
+   - `bicycle-routes-including-informal-on-road-and-off-road-routes.csv`: Data on bicycle routes in Melbourne.
+   - `self-guided-walks.csv`: Self-guided walking paths in Melbourne.
+   - `melbourne_city_landmarks.csv`: Landmark data for Melbourne, including location and description.
+   - `cafes-and-restaurants-with-seating-capacity.csv`: Restaurant data, including seating type, industry, and location.
+   - `hotels_with_suburb.csv`: Airbnb/Hotel data, including price, room type, and suburb.
+   - `small-areas-for-census-of-land-use-and-employment-clue`: Shapefile data used for geographic representation of restaurant areas.
+
+Dependencies:
+-------------
+The application requires the following R libraries:
+- shiny, shinyjs, leaflet, dplyr, sf, geojsonsf, plotly, shinydashboard, DT, shinythemes, RColorBrewer, scales, stringr, httr, bslib, shinyWidgets, tidyverse, ggiraph.
+
+Installation:
+-------------
+1. Install RStudio.
+2. Installing all the R libraries that mentioned in the Dependencies section
+3. Set up Tableau integration for Shiny by including `tableau-in-shiny-v1.2.R` in the same directory.
+
+Running the Application:
+------------------------
+1. Open RStudio.
+2. Navigate to the folder containing `R_code.R`.
+3. click on the 'Run App' button
